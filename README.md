@@ -8,6 +8,6 @@ I created a README generator.  The command line takes in the user's github, emai
 
 ![Code Quiz Screenshot](Develop/Assets/Demo.gif "Code Quiz Screenshot")
 
-## Deployed Application
+## GitHub Repository
 
 [Deployed Application](https://github.com/samrapow/homework10-readme-generator)
