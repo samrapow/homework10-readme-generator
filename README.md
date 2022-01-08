@@ -10,4 +10,4 @@ I created a README generator.  The command line takes in the user's github, emai
 
 ## GitHub Repository
 
-[Deployed Application](https://github.com/samrapow/homework10-readme-generator)
+[Github Repository](https://github.com/samrapow/homework10-readme-generator)
