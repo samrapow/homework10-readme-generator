@@ -52,7 +52,7 @@ function getUserInput() {
             {
                 type: "list",
                 message: "Which license does your project have?",
-                choices: ["MIT", "Mozilla", "Intel", "none"],
+                choices: ["MIT", "Mozilla-Public", "Apache", "none"],
                 name: "license"
             }
         ])
@@ -60,7 +60,7 @@ function getUserInput() {
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-    fs.writeFile(fileName, data, "utf8", function (err) {
+    fs.writeFile(fileName, data, function (err) {
         if (err) {
             throw err;
         }

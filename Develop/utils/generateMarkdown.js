@@ -1,14 +1,41 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
-function renderLicenseBadge(license) {}
+function renderLicenseBadge(license) {
+  if (license == 'MIT') {
+    return `[![MIT](Assets/MIT-logo.png)]`;
+  } if (license == 'Mozilla-Public') {
+    return `[![MIT](Assets/Mozilla-logo.png)]`;
+  } if (license == 'Apache') {
+    return `[![MIT](Assets/Apache-logo.png)]`;
+  } else {
+    return '';
+  }
+
+}
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
-function renderLicenseLink(license) {}
+function renderLicenseLink(license) {
+  if (license == 'MIT') {  
+    return "https://opensource.org/licenses/MIT";
+  } if (license == 'Mozilla-Public') {
+    return "https://opensource.org/licenses/MPL-2.0";
+  } if (license == 'Apache') {
+    return "https://opensource.org/licenses/Apache-2.0";
+  } else {
+    return "";
+  }
+}
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
-function renderLicenseSection(license) {}
+function renderLicenseSection(license) {
+  if (license != 'none') {
+    return (`${license}\n${renderLicenseLink(license)}`)
+  } else {
+    return ("");
+  }
+}
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
@@ -17,7 +44,12 @@ function generateMarkdown(data) {
   return `
     # ${data.title}
 
+    ${renderLicenseBadge(data.license)}
+
     ## Description
+    ${data.description}
+
+    ## Table of Contents
     - [Installation](#installation)
     - [Usage](#usage)
     - [License](#license)
@@ -32,7 +64,7 @@ function generateMarkdown(data) {
     ${data.usage}
 
     ## License
-    ${data.license}
+    ${renderLicenseSection(data.license)}
 
     ## Contributing
     Contributers: ${data.contributing}
@@ -48,3 +80,5 @@ function generateMarkdown(data) {
 }
 
 module.exports = generateMarkdown;
+
+
