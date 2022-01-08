@@ -73,7 +73,7 @@ async function init() {
     try {
         const userInput = await getUserInput();
         generateMarkdown(userInput);
-        writeToFile("README.md", generateMarkdown(userInput));
+        writeToFile("professionalREADME.md", generateMarkdown(userInput));
     } catch (err) {
         console.log(err);
     }

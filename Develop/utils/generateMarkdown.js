@@ -22,7 +22,8 @@ function generateMarkdown(data) {
     - [Usage](#usage)
     - [License](#license)
     - [Contributing](#contributing)
-    - [Tests][#tests]
+    - [Tests](#tests)
+    - [Questions](#questions)
 
     ## Installation
     ${data.installation}
@@ -33,8 +34,15 @@ function generateMarkdown(data) {
     ## License
     ${data.license}
 
+    ## Contributing
+    Contributers: ${data.contributing}
+
     ## Tests
-    Run ${data.tests} to start project
+    Run '${data.tests}' to start project
+
+    ## Questions
+    GitHub Profile: ${githubLink}
+    Reach me at ${data.email} with additional questions
 
 `;
 }
