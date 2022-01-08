@@ -1,10 +1,10 @@
 
-    # df
+    # Hello World
 
-    [![MIT](Assets/MIT-logo.png)]
+    [![MIT](Assets/Mozilla-logo.png)]
 
     ## Description
-    as
+    say hello to the world
 
     ## Table of Contents
     - [Installation](#installation)
@@ -15,22 +15,22 @@
     - [Questions](#questions)
 
     ## Installation
-    df
+    inquirer
 
     ## Usage
-    asd
+    saying hello to the world
 
     ## License
-    MIT
-https://opensource.org/licenses/MIT
+    Mozilla-Public
+https://opensource.org/licenses/MPL-2.0
 
     ## Contributing
-    Contributers: f
+    Contributers: Sam
 
     ## Tests
-    Run 'asdf' to start project
+    Run 'node index.js' to start project
 
     ## Questions
-    GitHub Profile: https://github.com/asdf
-    Reach me at asdfas with additional questions
+    GitHub Profile: https://github.com/samrapow
+    Reach me at samrapow@gmail.com with additional questions
 
